@@ -1,16 +1,18 @@
 /**
  * 
  */
-package at.technikum.wien.winterhalder.kreuzriegler.swe2.dto;
+package at.technikum.wien.winterhalder.kreuzriegler.swe2.response;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.ContactDto;
 
 /**
  * @author Matthias
  * 
  */
-public class GetAllContactsDto {
+public class GetAllContactsResponse {
 
 	private List<ContactDto> contacts = new ArrayList<ContactDto>();
 
