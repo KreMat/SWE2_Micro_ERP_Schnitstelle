@@ -1,5 +1,12 @@
 package at.technikum.wien.winterhalder.kreuzriegler.swe2.request;
 
+/**
+ * 
+ * 
+ * 
+ * @author richie
+ *
+ */
 public class GetContactAddressRequest {
 
 	private long contactId;

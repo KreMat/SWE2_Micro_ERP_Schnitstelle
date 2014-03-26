@@ -9,6 +9,8 @@ import java.util.List;
 import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.ContactDto;
 
 /**
+ *  uri: /getAllContacts
+ * 
  * @author Matthias
  * 
  */
