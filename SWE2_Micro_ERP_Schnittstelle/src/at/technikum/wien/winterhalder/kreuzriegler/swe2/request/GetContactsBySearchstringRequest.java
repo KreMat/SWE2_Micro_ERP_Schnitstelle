@@ -11,6 +11,10 @@ public class GetContactsBySearchstringRequest {
 
 	private String searchString;
 
+	public GetContactsBySearchstringRequest(String search) {
+		this.searchString = search;
+	}
+
 	/**
 	 * @return the searchString
 	 */
