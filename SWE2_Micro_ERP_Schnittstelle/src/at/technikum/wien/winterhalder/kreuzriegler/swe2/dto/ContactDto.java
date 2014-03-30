@@ -1,8 +1,10 @@
 package at.technikum.wien.winterhalder.kreuzriegler.swe2.dto;
 
 import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
+
+import at.technikum.wien.winterhalder.kreuzriegler.swe2.enums.AddressType;
 
 public class ContactDto {
 
@@ -22,7 +24,7 @@ public class ContactDto {
 
 	private Timestamp birthday;
 
-	private List<AddressDto> addresses = new ArrayList<AddressDto>();
+	private Map<AddressType, AddressDto> addresses = new HashMap<AddressType, AddressDto>();
 
 	private Long companyId;
 
@@ -164,7 +166,7 @@ public class ContactDto {
 	/**
 	 * @return the addresses
 	 */
-	public List<AddressDto> getAddresses() {
+	public Map<AddressType, AddressDto> getAddresses() {
 		return addresses;
 	}
 
@@ -172,7 +174,7 @@ public class ContactDto {
 	 * @param addresses
 	 *            the addresses to set
 	 */
-	public void setAddresses(List<AddressDto> addresses) {
+	public void setAddresses(Map<AddressType, AddressDto> addresses) {
 		this.addresses = addresses;
 	}
 
