@@ -157,4 +157,24 @@ public class ContactDto {
 		this.id = id;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		if(companyname != null) sb.append(companyname);
+		if(companyname != null) sb.append(" ");
+		if(uid != null) sb.append(uid);
+		if(uid != null) sb.append(" ");
+		if(title != null) sb.append(title);
+		if(title != null) sb.append(" ");
+		if(firstname != null) sb.append(firstname);
+		if(firstname != null) sb.append(" ");
+		if(lastname != null) sb.append(lastname);
+		if(lastname != null) sb.append(" ");
+		if(suffix != null) sb.append(suffix);
+		if(suffix != null) sb.append(" ");
+		return sb.toString();
+	}
+	
+	
+
 }
