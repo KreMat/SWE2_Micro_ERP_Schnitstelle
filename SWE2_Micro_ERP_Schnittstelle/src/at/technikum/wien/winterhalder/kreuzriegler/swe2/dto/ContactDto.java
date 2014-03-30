@@ -1,6 +1,5 @@
 package at.technikum.wien.winterhalder.kreuzriegler.swe2.dto;
 
-import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,7 +21,7 @@ public class ContactDto {
 
 	private String suffix;
 
-	private Timestamp birthday;
+	private long birthday;
 
 	private Map<AddressType, AddressDto> addresses = new HashMap<AddressType, AddressDto>();
 
@@ -121,7 +120,7 @@ public class ContactDto {
 	/**
 	 * @return the birthday
 	 */
-	public Timestamp getBirthday() {
+	public Long getBirthday() {
 		return birthday;
 	}
 
@@ -129,7 +128,7 @@ public class ContactDto {
 	 * @param birthday
 	 *            the birthday to set
 	 */
-	public void setBirthday(Timestamp birthday) {
+	public void setBirthday(long birthday) {
 		this.birthday = birthday;
 	}
 
