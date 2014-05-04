@@ -16,6 +16,14 @@ public class GetInvoicesByContactIdResponse {
 	private List<InvoiceDto> invoices = new ArrayList<InvoiceDto>();
 
 	/**
+	 * @param invoices
+	 */
+	public GetInvoicesByContactIdResponse(List<InvoiceDto> invoices) {
+		super();
+		this.invoices = invoices;
+	}
+	
+	/**
 	 * @return the invoices
 	 */
 	public List<InvoiceDto> getInvoices() {
@@ -29,4 +37,5 @@ public class GetInvoicesByContactIdResponse {
 	public void setInvoices(List<InvoiceDto> invoices) {
 		this.invoices = invoices;
 	}
+
 }

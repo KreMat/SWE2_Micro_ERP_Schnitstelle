@@ -13,7 +13,16 @@ import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.InvoiceDto;
  *
  */
 public class GetInvoicesBySearchstringResponse {
+	
 	private List<InvoiceDto> invoices = new ArrayList<InvoiceDto>();
+
+	/**
+	 * @param invoices
+	 */
+	public GetInvoicesBySearchstringResponse(List<InvoiceDto> invoices) {
+		super();
+		this.invoices = invoices;
+	}
 
 	/**
 	 * @return the invoices

@@ -12,6 +12,19 @@ public class GetInvoicesBySearchstringRequest {
 	private String contact;
 	private String dateRange;
 	private String amountRange;
+	
+	/**
+	 * @param contact
+	 * @param dateRange
+	 * @param amountRange
+	 */
+	public GetInvoicesBySearchstringRequest(String contact, String dateRange,
+			String amountRange) {
+		super();
+		this.contact = contact;
+		this.dateRange = dateRange;
+		this.amountRange = amountRange;
+	}
 
 	/**
 	 * @return the contact
@@ -57,4 +70,5 @@ public class GetInvoicesBySearchstringRequest {
 	public void setAmountRange(String amountRange) {
 		this.amountRange = amountRange;
 	}
+
 }

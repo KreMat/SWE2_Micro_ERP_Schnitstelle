@@ -17,6 +17,14 @@ public class GetContactsBySearchstringResponse {
 	private List<ContactDto> contacts = new ArrayList<ContactDto>();
 
 	/**
+	 * @param contacts
+	 */
+	public GetContactsBySearchstringResponse(List<ContactDto> contacts) {
+		super();
+		this.contacts = contacts;
+	}
+
+	/**
 	 * @return the contacts
 	 */
 	public List<ContactDto> getContacts() {
