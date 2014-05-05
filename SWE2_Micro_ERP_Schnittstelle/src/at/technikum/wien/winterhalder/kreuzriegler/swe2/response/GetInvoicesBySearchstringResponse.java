@@ -10,10 +10,10 @@ import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.InvoiceDto;
 
 /**
  * @author richie
- *
+ * 
  */
-public class GetInvoicesBySearchstringResponse {
-	
+public class GetInvoicesBySearchstringResponse extends AbstractResponse {
+
 	private List<InvoiceDto> invoices = new ArrayList<InvoiceDto>();
 
 	/**
@@ -32,10 +32,11 @@ public class GetInvoicesBySearchstringResponse {
 	}
 
 	/**
-	 * @param invoices the invoices to set
+	 * @param invoices
+	 *            the invoices to set
 	 */
 	public void setInvoices(List<InvoiceDto> invoices) {
 		this.invoices = invoices;
 	}
-	
+
 }

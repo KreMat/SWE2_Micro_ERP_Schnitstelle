@@ -12,7 +12,7 @@ import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.ContactDto;
  * @author Matthias
  * 
  */
-public class GetContactsBySearchstringResponse {
+public class GetContactsBySearchstringResponse extends AbstractResponse {
 
 	private List<ContactDto> contacts = new ArrayList<ContactDto>();
 
@@ -22,6 +22,10 @@ public class GetContactsBySearchstringResponse {
 	public GetContactsBySearchstringResponse(List<ContactDto> contacts) {
 		super();
 		this.contacts = contacts;
+	}
+
+	public GetContactsBySearchstringResponse() {
+		super();
 	}
 
 	/**
