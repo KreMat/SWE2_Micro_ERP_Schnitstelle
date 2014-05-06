@@ -13,29 +13,29 @@ import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.ContactDto;
  */
 public class GetCompanysByNameResponse extends AbstractResponse {
 
-	private List<ContactDto> contacts;
+	private List<ContactDto> companies;
 
 	/**
 	 * @param constacts
 	 */
-	public GetCompanysByNameResponse(List<ContactDto> constacts) {
+	public GetCompanysByNameResponse(List<ContactDto> companies) {
 		super();
-		this.contacts = constacts;
+		this.companies = companies;
 	}
 
 	/**
-	 * @return the constacts
+	 * @return the companies
 	 */
-	public List<ContactDto> getConstacts() {
-		return contacts;
+	public List<ContactDto> getCompanies() {
+		return companies;
 	}
 
 	/**
-	 * @param constacts
-	 *            the constacts to set
+	 * @param companies the companies to set
 	 */
-	public void setConstacts(List<ContactDto> constacts) {
-		this.contacts = constacts;
+	public void setCompanies(List<ContactDto> companies) {
+		this.companies = companies;
 	}
+
 
 }
