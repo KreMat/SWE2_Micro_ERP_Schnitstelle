@@ -1,9 +1,5 @@
 package at.technikum.wien.winterhalder.kreuzriegler.swe2.request;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.AddressDto;
 import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.ContactDto;
 
 public class CreateOrUpdateContactRequest {

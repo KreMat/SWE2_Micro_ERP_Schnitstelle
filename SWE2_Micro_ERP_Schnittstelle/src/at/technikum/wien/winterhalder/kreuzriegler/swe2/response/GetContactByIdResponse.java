@@ -9,7 +9,7 @@ import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.ContactDto;
  * @author richie
  * 
  */
-public class GetContactByIdResponse {
+public class GetContactByIdResponse extends AbstractResponse {
 
 	private ContactDto contact;
 

@@ -9,12 +9,12 @@ import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.ContactDto;
 
 /**
  * @author richie
- *
+ * 
  */
-public class GetContactsByNameResponse {
+public class GetContactsByNameResponse extends AbstractResponse {
 
 	private List<ContactDto> contacts;
-	
+
 	/**
 	 * @param contacts
 	 */
@@ -31,7 +31,8 @@ public class GetContactsByNameResponse {
 	}
 
 	/**
-	 * @param contacts the contacts to set
+	 * @param contacts
+	 *            the contacts to set
 	 */
 	public void setContacts(List<ContactDto> contacts) {
 		this.contacts = contacts;

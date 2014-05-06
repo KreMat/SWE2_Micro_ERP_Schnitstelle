@@ -12,7 +12,8 @@ import at.technikum.wien.winterhalder.kreuzriegler.swe2.dto.InvoiceDto;
  * @author richie
  * 
  */
-public class GetInvoicesByContactIdResponse {
+public class GetInvoicesByContactIdResponse extends AbstractResponse {
+
 	private List<InvoiceDto> invoices = new ArrayList<InvoiceDto>();
 
 	/**
@@ -22,7 +23,11 @@ public class GetInvoicesByContactIdResponse {
 		super();
 		this.invoices = invoices;
 	}
-	
+
+	public GetInvoicesByContactIdResponse() {
+		super();
+	}
+
 	/**
 	 * @return the invoices
 	 */
