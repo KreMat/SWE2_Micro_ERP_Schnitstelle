@@ -30,12 +30,4 @@ public class GetCompanysByNameResponse extends AbstractResponse {
 		return companies;
 	}
 
-	/**
-	 * @param companies the companies to set
-	 */
-	public void setCompanies(List<ContactDto> companies) {
-		this.companies = companies;
-	}
-
-
 }
