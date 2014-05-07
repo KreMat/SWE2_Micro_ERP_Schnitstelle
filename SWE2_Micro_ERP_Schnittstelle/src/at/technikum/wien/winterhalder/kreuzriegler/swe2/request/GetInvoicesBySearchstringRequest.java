@@ -5,25 +5,30 @@ package at.technikum.wien.winterhalder.kreuzriegler.swe2.request;
 
 /**
  * @author richie
- *
+ * 
  */
 public class GetInvoicesBySearchstringRequest {
-
 	private String contact;
-	private String dateRange;
-	private String amountRange;
-	
+	private Long dateFrom;
+	private Long dateTo;
+	private Double amountFrom;
+	private Double amountTo;
+
 	/**
 	 * @param contact
-	 * @param dateRange
-	 * @param amountRange
+	 * @param dateFrom
+	 * @param dateTo
+	 * @param amountFrom
+	 * @param amountTo
 	 */
-	public GetInvoicesBySearchstringRequest(String contact, String dateRange,
-			String amountRange) {
+	public GetInvoicesBySearchstringRequest(String contact, Long dateFrom,
+			Long dateTo, Double amountFrom, Double amountTo) {
 		super();
 		this.contact = contact;
-		this.dateRange = dateRange;
-		this.amountRange = amountRange;
+		this.dateFrom = dateFrom;
+		this.dateTo = dateTo;
+		this.amountFrom = amountFrom;
+		this.amountTo = amountTo;
 	}
 
 	/**
@@ -42,33 +47,64 @@ public class GetInvoicesBySearchstringRequest {
 	}
 
 	/**
-	 * @return the dateRange
+	 * @return the dateFrom
 	 */
-	public String getDateRange() {
-		return dateRange;
+	public Long getDateFrom() {
+		return dateFrom;
 	}
 
 	/**
-	 * @param dateRange
-	 *            the dateRange to set
+	 * @param dateFrom
+	 *            the dateFrom to set
 	 */
-	public void setDateRange(String dateRange) {
-		this.dateRange = dateRange;
+	public void setDateFrom(Long dateFrom) {
+		this.dateFrom = dateFrom;
 	}
 
 	/**
-	 * @return the amountRange
+	 * @return the dateTo
 	 */
-	public String getAmountRange() {
-		return amountRange;
+	public Long getDateTo() {
+		return dateTo;
 	}
 
 	/**
-	 * @param amountRange
-	 *            the amountRange to set
+	 * @param dateTo
+	 *            the dateTo to set
 	 */
-	public void setAmountRange(String amountRange) {
-		this.amountRange = amountRange;
+	public void setDateTo(Long dateTo) {
+		this.dateTo = dateTo;
+	}
+
+	/**
+	 * @return the amountFrom
+	 */
+	public Double getAmountFrom() {
+		return amountFrom;
+	}
+
+	/**
+	 * @param amountFrom
+	 *            the amountFrom to set
+	 */
+	public void setAmountFrom(Double amountFrom) {
+		this.amountFrom = amountFrom;
+	}
+
+	/**
+	 * @return the amountTo
+	 */
+	public Double getAmountTo() {
+		return amountTo;
+	}
+
+	/**
+	 * @param amountTo
+	 *            the amountTo to set
+	 */
+	public void setAmountTo(Double amountTo) {
+		this.amountTo = amountTo;
+
 	}
 
 }
