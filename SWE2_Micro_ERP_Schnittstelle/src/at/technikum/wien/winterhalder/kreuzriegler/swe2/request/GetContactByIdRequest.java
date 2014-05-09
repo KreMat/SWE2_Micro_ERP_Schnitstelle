@@ -8,7 +8,7 @@ package at.technikum.wien.winterhalder.kreuzriegler.swe2.request;
  * 
  */
 public class GetContactByIdRequest {
-	private int contactId;
+	private long contactId;
 
 	/**
 	 * @param contactId
@@ -20,7 +20,7 @@ public class GetContactByIdRequest {
 	/**
 	 * @return the contactId
 	 */
-	public int getContactId() {
+	public long getContactId() {
 		return contactId;
 	}
 
@@ -28,7 +28,7 @@ public class GetContactByIdRequest {
 	 * @param contactId
 	 *            the contactId to set
 	 */
-	public void setContactId(int contactId) {
+	public void setContactId(long contactId) {
 		this.contactId = contactId;
 	}
 
