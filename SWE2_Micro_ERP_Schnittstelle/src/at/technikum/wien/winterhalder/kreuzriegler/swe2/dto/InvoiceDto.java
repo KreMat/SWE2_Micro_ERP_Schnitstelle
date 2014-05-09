@@ -27,6 +27,8 @@ public class InvoiceDto {
 	private long contactId;
 
 	private List<InvoiceRowDto> rows = new ArrayList<InvoiceRowDto>();
+	
+	private boolean locked = false;
 
 	/**
 	 * @return the id
@@ -146,6 +148,20 @@ public class InvoiceDto {
 	 */
 	public void setContactId(long contactId) {
 		this.contactId = contactId;
+	}
+
+	/**
+	 * @return the locked
+	 */
+	public boolean isLocked() {
+		return locked;
+	}
+
+	/**
+	 * @param locked the locked to set
+	 */
+	public void setLocked(boolean locked) {
+		this.locked = locked;
 	}
 
 }
