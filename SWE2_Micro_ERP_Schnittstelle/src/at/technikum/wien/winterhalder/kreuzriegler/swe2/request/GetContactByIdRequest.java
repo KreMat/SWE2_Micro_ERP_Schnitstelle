@@ -13,7 +13,7 @@ public class GetContactByIdRequest {
 	/**
 	 * @param contactId
 	 */
-	public GetContactByIdRequest(int contactId) {
+	public GetContactByIdRequest(long contactId) {
 		this.contactId = contactId;
 	}
 
